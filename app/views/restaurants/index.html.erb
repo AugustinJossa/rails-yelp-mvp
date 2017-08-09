@@ -1,0 +1,21 @@
+<div class='banner-list'></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offeset-3 ">
+    <h1>Restaurants list</h1>
+    <% @restaurants.each do |restaurant| %>
+      <ul>
+        <li>
+          <%= restaurant.name %> -
+          <%= restaurant.category %> -
+          <%= link_to 'details', restaurant_path(restaurant) %> -
+          <%= link_to new_restaurant_review_path(restaurant) do %>
+          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          <% end %>
+        </li>
+      </ul>
+    <% end %>
+    </div>
+  </div>
+</div>
+

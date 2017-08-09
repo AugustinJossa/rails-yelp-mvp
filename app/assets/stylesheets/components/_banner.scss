@@ -1,0 +1,26 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 300px;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background: linear-gradient(45deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://www.terrass-hotel.com/sites/default/files/styles/colorbox/public/Restauration/restaurant.png?itok=v-Y67a03&title=Plat4);
+  // linear-gradient(45deg, rgba(0,0,0,0.3), rgba(0,0,-0.1,0.3))
+  // background-image: url(http://www.terrass-hotel.com/sites/default/files/styles/colorbox/public/Restauration/restaurant.png?itok=v-Y67a03&title=Plat4);
+  background-position: center;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
